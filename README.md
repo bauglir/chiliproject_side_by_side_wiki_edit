@@ -1,6 +1,6 @@
 # ChiliProject - Side by side wiki edit plugin
 
-* http://github.com/bauglir/chiliproject\_side\_by\_side\_wiki\_edit/
+* http://github.com/bauglir/chiliproject_side_by_side_wiki_edit/
 
 This plugin adds a checkbox on wiki edit pages to put the editor and the
 preview window side by side.
