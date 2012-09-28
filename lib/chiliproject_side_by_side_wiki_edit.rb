@@ -1,0 +1,4 @@
+require "chiliproject_side_by_side_wiki_edit/version"
+
+module ChiliprojectSideBySideWikiEdit
+end

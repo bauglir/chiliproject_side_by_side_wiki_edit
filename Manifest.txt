@@ -1,0 +1,15 @@
+.gitignore
+Gemfile
+History.txt
+LICENSE
+Manifest.txt
+README.md
+Rakefile
+assets/javascripts/side_by_side_edit.js
+chiliproject_side_by_side_wiki_edit.gemspec
+init.rb
+lib/chiliproject_side_by_side_wiki_edit.rb
+lib/chiliproject_side_by_side_wiki_edit/hooks/view_wiki_edit_hook.rb
+lib/chiliproject_side_by_side_wiki_edit/version.rb
+lib/tasks/chiliproject_side_by_side_wiki_edit_tasks.rb
+rails/init.rb
