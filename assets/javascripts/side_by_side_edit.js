@@ -1,5 +1,4 @@
-jQuery(function() {
-  var $ = jQuery;
+jQuery(function($) {
   var editor = $('textarea.wiki-edit');
   var editor_parent = editor.parentsUntil('p').parent();
   var preview = $('div#preview');
