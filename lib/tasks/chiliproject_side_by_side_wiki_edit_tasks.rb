@@ -3,10 +3,6 @@ require 'rake/tasklib'
 
 class ChiliprojectSideBySideWikiEditTasks < Rake::TaskLib
   def initialize
-    define
-  end
-
-  def define
     namespace :chiliproject_side_by_side_wiki_edit do
       desc "Install ChiliprojectSideBySideWikiEdit plugin (include assets, etc)"
       task :install => [:symlink_assets]
