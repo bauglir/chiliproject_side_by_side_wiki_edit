@@ -6,6 +6,7 @@ jQuery(function($) {
 
   var disable_side_by_side_mode = function() {
     editor_parent.add(preview).removeClass('side_by_side');
+    editor.off('scroll');
     $('#content').append(preview);
   };
 
@@ -30,7 +31,7 @@ jQuery(function($) {
     target.scrollTop(source_position * (target[0].scrollHeight - target.innerHeight()));
   };
 
-  var toggle_side_by_side_mode = function(event) {
+  var toggle_side_by_side_mode = function() {
     if(this.checked) {
       enable_side_by_side_mode();
     } else {
