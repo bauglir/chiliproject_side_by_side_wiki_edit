@@ -1,20 +1,19 @@
 jQuery(function() {
   var $ = jQuery;
   var editor = $('textarea.wiki-edit');
+  var editor_parent = editor.parentsUntil('p').parent();
   var preview = $('div#preview');
   var preview_link = $('input[name=commit]').next();
 
   var disable = function() {
-    editor.parentsUntil('p').parent().removeAttr('style');
-    preview.removeAttr('style');
+    editor_parent.add(preview).removeClass('side_by_side');
     $('#content').append(preview);
   };
 
   var enable = function() {
-    var editorParent = editor.parentsUntil('p').parent();
+    editor_parent.add(preview).addClass('side_by_side');
 
-    editorParent.css('width', '49%').before(preview);
-    preview.css({ 'float': 'right', 'width': '49%', 'margin-top': '5ex', 'overflow-y': 'scroll' });
+    editor_parent.before(preview);
     preview.height(editor.height() + 5);
 
     editor.scroll(preview, scroll_preview);
