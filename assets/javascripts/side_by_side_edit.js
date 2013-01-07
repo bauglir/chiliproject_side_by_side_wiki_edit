@@ -1,10 +1,11 @@
 jQuery(function($) {
+  var htmlElement = $('html');
   var editor = $('textarea.wiki-edit');
   var preview = $('div#preview');
   var preview_link = $('input[name=commit]').next();
 
   var disable_side_by_side_mode = function() {
-    editor.add(preview).removeClass('side_by_side');
+    htmlElement.removeClass('side_by_side');
 
     editor.off('scroll');
     editor.off('mouseup');
@@ -13,7 +14,7 @@ jQuery(function($) {
   };
 
   var enable_side_by_side_mode = function() {
-    editor.add(preview).addClass('side_by_side');
+    htmlElement.addClass('side_by_side');
 
     editor.before(preview);
     resize_preview_to_editor_height();

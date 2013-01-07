@@ -1,9 +1,9 @@
-textarea.wiki-edit.side_by_side {
+.side_by_side textarea.wiki-edit {
   resize: vertical;
   width: 49.5%;
 }
 
-#preview.side_by_side {
+.side_by_side #preview {
   float: right;
   overflow-y: scroll;
   width: 49.5%;
