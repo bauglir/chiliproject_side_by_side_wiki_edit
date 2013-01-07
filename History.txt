@@ -1,3 +1,13 @@
+=== 0.2.0 2013-01-07
+
+* 2 enhancements
+  * Introduces writing mode, which removes all layout from the wiki edit
+    page which is not relevant to the task at hand of editing wiki pages
+    to get optimal screen real-estate for the editor and preview
+    elements
+  * Resizing the editor textarea element on supported browsers resizes
+    the preview window accordingly
+
 === 0.1.1 2012-12-06
 
 * 1 enhancement:
