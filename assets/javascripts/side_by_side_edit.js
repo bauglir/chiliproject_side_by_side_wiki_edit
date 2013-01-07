@@ -13,6 +13,10 @@ jQuery(function($) {
     $('#content').append(preview);
   };
 
+  var disable_writing_mode = function() {
+    htmlElement.removeClass('writing_mode');
+  }
+
   var enable_side_by_side_mode = function() {
     htmlElement.addClass('side_by_side');
 
@@ -27,6 +31,10 @@ jQuery(function($) {
       preview_link.click();
     }
   };
+
+  var enable_writing_mode = function() {
+    htmlElement.addClass('writing_mode');
+  }
 
   var resize_preview_if_required = function() {
     var newEditorHeight = editor.outerHeight();
@@ -56,9 +64,20 @@ jQuery(function($) {
     }
   };
 
+  var toggle_writing_mode = function() {
+    if(this.checked) {
+      enable_writing_mode();
+    } else {
+      disable_writing_mode();
+    }
+  };
+
   preview_link.after($('<label for="side_by_side_mode">Show editor and preview side-by-side</label>'))
-              .after($('<input id="side_by_side_mode" type="checkbox" />'));
+              .after($('<input id="side_by_side_mode" type="checkbox" />'))
+              .after($('<label for="writing_mode">Writing mode</label>'))
+              .after($('<input id="writing_mode" type="checkbox" />'));
   $('#side_by_side_mode').click(toggle_side_by_side_mode);
+  $('#writing_mode').click(toggle_writing_mode);
 
   editor.data('height', editor.outerHeight());
 });

@@ -9,3 +9,10 @@
   width: 49.5%;
 }
 
+.writing_mode #footer, .writing_mode #side-container, .writing_mode #top-menu {
+  display: none;
+}
+
+.writing_mode div#content {
+  margin: 0;
+}
