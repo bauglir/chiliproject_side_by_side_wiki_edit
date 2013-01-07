@@ -1,8 +1,11 @@
+textarea.wiki-edit.side_by_side {
+  resize: vertical;
+  width: 49.5%;
+}
+
 #preview.side_by_side {
   float: right;
   overflow-y: scroll;
+  width: 49.5%;
 }
 
-.side_by_side {
-  width: 49.5% !important;
-}
