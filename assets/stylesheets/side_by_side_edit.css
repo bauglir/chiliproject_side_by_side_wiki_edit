@@ -1,9 +1,8 @@
-.side_by_side {
-  width: 49.5%;
-}
-
 #preview.side_by_side {
   float: right;
-  margin-top: 5ex;
   overflow-y: scroll;
+}
+
+.side_by_side {
+  width: 49.5% !important;
 }
