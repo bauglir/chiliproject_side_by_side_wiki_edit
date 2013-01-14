@@ -42,6 +42,21 @@ RAILS_ENV=production rake chiliproject_side_by_side_wiki_edit:install
 
 And finally cycle your application server
 
+## Uninstalling
+
+To uninstall the plugin run the uninstall rake task
+```
+RAILS_ENV=production rake chiliproject_side_by_side_wiki_edit:uninstall
+```
+
+Remove the
+```
+gem chiliproject_side_by_side_wiki_edit
+```
+line from your 'Gemfile'
+
+And cycle your application server
+
 ## LICENSE:
 
 Refer to the [LICENSE](https://github.com/bauglir/chiliproject_side_by_side_wiki_edit/blob/master/LICENSE) file
