@@ -30,6 +30,18 @@ RAILS_ENV=production rake chiliproject_side_by_side_wiki_edit:install
 
 Finally cycle your application server to enable the plugin
 
+## Updating
+
+To update the plugin run `bundle update chiliproject_side_by_side_wiki_edit`
+
+Rerun the installation task to make sure the plugins assets are updated
+to their latest versions
+```
+RAILS_ENV=production rake chiliproject_side_by_side_wiki_edit:install
+```
+
+And finally cycle your application server
+
 ## LICENSE:
 
 Refer to the [LICENSE](https://github.com/bauglir/chiliproject_side_by_side_wiki_edit/blob/master/LICENSE) file
