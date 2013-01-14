@@ -1,3 +1,9 @@
+=== 0.2.1 2013-01-14
+
+* 1 bug fix:
+  * The plugins mode checkboxes no longer show when adding files to a
+    wiki page when not in edit mode for that wiki page
+
 === 0.2.0 2013-01-07
 
 * 2 enhancements
